@@ -23,7 +23,7 @@ const Users = () => {
             <Pagination
               data={users}
               RenderComponent={UserCard}
-              title="Active Users"
+              title="My Repositories"
               pageLimit={5}
               dataLimit={6}
             />
