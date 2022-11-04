@@ -8,10 +8,10 @@ const Users = () => {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-        fetch("https://randomuser.me/api/?results=100")
+        fetch("https://api.github.com/users/Bentike/repos")
           .then(response => response.json())
           .then(data => {
-             setUsers(data.results);
+             setUsers(data);
           });
         }, []);
 

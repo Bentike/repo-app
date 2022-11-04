@@ -1,16 +1,15 @@
 import './Styles/UserCard.css';
 
 const UserCard = (props) => {
-    const large = props.data.picture.large;
-    const {gender, email, phone} = props.data;
-    const {title, first, last} = props.data.name;    
+    console.log(props);
+   const {url, full_name, name, id, default_branch} = props;
     return(
         <div className="card">
-            <img src={large} alt="user"/>
-            <p className='username'>{title} {first} {last}</p>
-            <p className="cardContent">{gender}</p>
-            <p className="cardContent">{email}</p>
-            <p className="cardContent">{phone}</p>
+            <p className='username'>{full_name}</p>
+            <p className="cardContent">{name}</p>
+            <p className="cardContent">{url}</p>
+            <p className="cardContent">{default_branch}</p>
+            <p className="cardContent">{id}</p>
         </div>
     );
 }
