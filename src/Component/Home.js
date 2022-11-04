@@ -6,12 +6,12 @@ const Home = () => {
          <>
              <nav>
                 <Link to='/' className="link">Home</Link>
-                <Link to='users' className="link">Users</Link>
+                <Link to='repos' className="link">Repositories</Link>
              </nav>
              <div className="home_div">
                  <h1 className="heading">Welcome to Users Search App</h1>
                  <p className="homeText">Navigate to  
-                      <Link to='users'><span>users</span></Link> 
+                      <Link to='repos'><span>repos</span></Link> 
                      to view active users
                  </p>
              </div>

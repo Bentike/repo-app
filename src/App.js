@@ -1,6 +1,6 @@
 import './App.css';
 import Home from './Component/Home';
-import Users from './Component/Users';
+import Repos from './Component/Repos';
 import {Route, Routes} from 'react-router-dom';
 import Error from './Component/Error';
 import NotFound from './Component/NotFound';
@@ -11,7 +11,7 @@ function App() {
       <Routes>
           <Route path='*' element={<NotFound/>}/>
           <Route path='/' element={<Home />}>
-            <Route path='users' element={<Users/>}/>
+            <Route path='repos' element={<Repos/>}/>
           </Route> 
       </Routes> 
     </Error>
