@@ -2,7 +2,7 @@ import './Styles/UserCard.css';
 
 const UserCard = (props) => {
     console.log(props);
-   const {url, full_name, name, id, default_branch} = props;
+   const {url, full_name, name, id, default_branch} = props.data;
     return(
         <div className="card">
             <p className='username'>{full_name}</p>
