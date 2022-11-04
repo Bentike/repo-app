@@ -25,7 +25,7 @@ const Users = () => {
               RenderComponent={UserCard}
               title="Active Users"
               pageLimit={5}
-              dataLimit={12}
+              dataLimit={6}
             />
           </div>
         ) : (
