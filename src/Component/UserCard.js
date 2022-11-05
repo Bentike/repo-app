@@ -6,15 +6,15 @@ const UserCard = (props) => {
    const {url, full_name, name, id, default_branch} = props.data;
 
     return(
-        <Link to='/repo'>
-            <div className="card">
-                <p className='username'>Name: {full_name}</p>
-                <p className="cardContent">AppName: {name}</p>
-                <p className="cardContent">AppUrl: {url}</p>
-                <p className="cardContent">Branch: {default_branch}</p>
-                <p className="cardContent">Id: {id}</p>
-            </div>
-        </Link>
+        <div className="card">
+             <Link to='/repo'>
+                <p><span className='title'>Name:</span> {full_name}</p>
+                <p><span className='title'>AppName:</span> {name}</p>
+                <p><span className='title'>AppUrl:</span> {url}</p>
+                <p><span className='title'>Branch:</span> {default_branch}</p>
+                <p><span className='title'>Id:</span> {id}</p>
+             </Link>
+        </div>
     );
 }
 
