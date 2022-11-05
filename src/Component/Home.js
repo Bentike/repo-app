@@ -8,7 +8,7 @@ const Home = () => {
            <Helmet>
                <title>Github Repositories</title>
                <meta name="description" content="How to fetch the list of all existing repositories of a registered github user from github API"/>
-               <link rel="canonical" href="/"/>
+               <link rel="canonical" href="/" />
            </Helmet>
              <nav>
                 <Link to='/' className="link">Home</Link>
