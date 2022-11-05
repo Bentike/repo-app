@@ -1,4 +1,5 @@
 import {useEffect, useState} from 'react';
+import { Helmet } from 'react-helmet-async';
 import './Styles/Repo.css';
 
 const Repo = () => {
@@ -25,6 +26,11 @@ const Repo = () => {
     
     return(
             <div className='repo'>
+                <Helmet>
+                   <title>Github Repositories</title>
+                   <meta name="description" content="How to fetch the list of all existing repositories of a registered github user from github API"/>
+                   <link rel="canonical" href="/" />  
+                </Helmet>  
                 <h1>Repo Details To be displayed Here</h1>
                 <p>{created_at}</p>
                 <p>{default_branch}</p>
