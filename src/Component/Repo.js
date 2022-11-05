@@ -21,27 +21,27 @@ const Repo = () => {
             });
     }, []);
 
-    const {created_at, default_branch, fullname, language, name, visibility} = repo;
+    const {created_at, default_branch, full_name, language, name, visibility} = repo;
     const {avatar_url, login, id, url} = owner;
     
     return(
-            <div className='card'>
+            <div className='repo'>
                 <Helmet>
                    <title>Github Repositories</title>
                    <meta name="description" content="How to fetch the list of all existing repositories of a registered github user from github API"/>
                    <link rel="canonical" href="/" />  
                 </Helmet>  
-                <h1>Repo Details To be displayed Here</h1>
-                <p>{created_at}</p>
-                <p>{default_branch}</p>
-                <p>{fullname}</p>
-                <p>{language}</p>
-                <p>{name}</p>
-                <p>{visibility}</p>
-                <p>{login}</p>
-                <p>{id}</p>
-                <p>{url}</p>
-                <img src={avatar_url} alt='owner'/>
+                <h1>More Details</h1>
+                <img src={avatar_url} alt='owner' className='avatar'/>
+                <p><span className='title'>Username: </span>{login}</p>
+                <p><span className='title'>Fullname: </span>{full_name}</p>
+                <p><span className='title'>Name: </span>{name}</p>
+                <p><span className='title'>Date Created: </span>{created_at}</p>
+                <p><span className='title'>Default branch: </span>{default_branch}</p>
+                <p><span className='title'>Language: </span>{language}</p>
+                <p><span className='title'>Visibility: </span>{visibility}</p>
+                <p><span className='title'>Repo Id: </span>{id}</p>
+                <p><span className='title'>Url: </span>{url}</p>
             </div>
         );
 }
