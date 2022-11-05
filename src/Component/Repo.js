@@ -3,7 +3,7 @@ import './Styles/Repo.css';
 
 const Repo = () => {
     
- // gets repoName from local storage
+   // gets repoName from local storage
    const getRepoName = () => {
     return JSON.parse(localStorage.getItem('repoName'));
   }
@@ -37,7 +37,7 @@ const Repo = () => {
                 <p>{url}</p>
                 <img src={avatar_url} alt='owner'/>
             </div>
-    )
+        );
 }
 
 export default Repo;
