@@ -4,9 +4,6 @@ import UserCard from "./UserCard";
 import './Styles/Users.css';
 import Spinner from "./Spinner";
 
-// link to fetch a specific url
-// https://api.github.com/repos/Bentike/about_me
-
 const Users = () => {
     const [users, setUsers] = useState([]);
 
