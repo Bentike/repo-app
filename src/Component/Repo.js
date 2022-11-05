@@ -25,7 +25,7 @@ const Repo = () => {
     const {avatar_url, login, id, url} = owner;
     
     return(
-            <div className='repo'>
+            <div className='card'>
                 <Helmet>
                    <title>Github Repositories</title>
                    <meta name="description" content="How to fetch the list of all existing repositories of a registered github user from github API"/>

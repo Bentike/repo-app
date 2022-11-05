@@ -12,12 +12,12 @@ function App() {
       <Routes>
           <Route path='*' element={<NotFound/>}/>
           <Route path='/' element={<Home />}>
-            <Route path='repos' element={<Repos />}/>
-            <Route path='repo' element={<Repo />}/>
+              <Route path='repos' element={<Repos />}/>
+              <Route path='repo' element={<Repo />}/>
           </Route> 
       </Routes> 
     </Error>
-  );
+  ); 
 }
 
 export default App;

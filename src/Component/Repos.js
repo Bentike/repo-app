@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import {useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import Pagination from "./Pagination";
 import UserCard from "./UserCard";
+import Error from "./Error";
 import './Styles/Users.css';
 import Spinner from "./Spinner";
 
