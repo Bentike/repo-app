@@ -21,7 +21,7 @@ class Error extends React.Component{
 
     render(){
         if(this.state.hasError){
-            return "Page Not Found";
+            return "Something Went Wrong!!!";
         }
         return this.props.children;
     }

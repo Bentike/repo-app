@@ -8,15 +8,15 @@ import NotFound from './Component/NotFound';
 
 function App() {
   return (
-    <Error>
+     <Error>
       <Routes>
-          <Route path='*' element={<NotFound/>}/>
+          <Route path='*' element={<NotFound/>}/> 
           <Route path='/' element={<Home />}>
               <Route path='repos' element={<Repos />}/>
               <Route path='repo' element={<Repo />}/>
-          </Route> 
-      </Routes> 
-    </Error>
+          </Route>   
+      </Routes>
+     </Error>  
   ); 
 }
 
