@@ -1,3 +1,5 @@
+import './Styles/Repo.css';
+
 const Repo = () => {
     return(
             <div>
