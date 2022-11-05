@@ -5,11 +5,12 @@ import './Styles/UserCard.css';
 const UserCard = (props) => {
    const {url, full_name, name, id, default_branch} = props.data;
    
+   // gets repoName from local storage
    const getRepoName = () => {
     return JSON.parse(localStorage.getItem('repoName'));
   }
   
-   const [repoName, setRepoName] = useState(() => getRepoName());
+   const [repoName] = useState(() => getRepoName());
 
     useEffect(() => {
        localStorage.setItem('repoName', JSON.stringify(repoName));
