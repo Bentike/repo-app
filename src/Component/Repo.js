@@ -29,7 +29,9 @@ const Repo = () => {
                 <Helmet>
                    <title>Github Repositories</title>
                    <meta name="description" content="How to fetch the list of all existing repositories of a registered github user from github API"/>
-                   <link rel="canonical" href="/" />  
+                   <meta name='keywords' content='Html, Css, JavaScript, React, React-Router, Github, Pagination, Error Boundary, Repositories, API'/>
+                   <meta name="author" content="Ajadi Yusuf"/>
+                   <link rel="canonical" href="/repo" />  
                 </Helmet>  
                 <h1>More Details</h1>
                 <img src={avatar_url} alt='owner' className='avatar'/>

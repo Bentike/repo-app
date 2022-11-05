@@ -22,7 +22,9 @@ const Users = () => {
         <Helmet>
             <title>Github Repositories</title>
             <meta name="description" content="How to fetch the list of all existing repositories of a registered github user from github API"/>
-            <link rel="canonical" href="/" />  
+            <meta name='keywords' content='Html, Css, JavaScript, React, React-Router, Github, Pagination, Error Boundary, Repositories, API'/>
+            <meta name="author" content="Ajadi Yusuf"/>
+            <link rel="canonical" href="/repos" />  
         </Helmet>          
         {users.length > 0 ? (
           <div>

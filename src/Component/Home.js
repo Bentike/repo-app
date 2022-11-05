@@ -8,6 +8,8 @@ const Home = () => {
            <Helmet>
                <title>Github Repositories</title>
                <meta name="description" content="How to fetch the list of all existing repositories of a registered github user from github API"/>
+               <meta name='keywords' content='Html, Css, JavaScript, React, React-Router, Github, Pagination, Error Boundary, Repositories, API'/>
+               <meta name="author" content="Ajadi Yusuf"/>
                <link rel="canonical" href="/" />
            </Helmet>
              <nav>
