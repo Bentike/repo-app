@@ -1,8 +1,8 @@
 import './Styles/Repo.css';
 
-const Repo = () => {
+const Repo = (props) => {
     return(
-            <div>
+            <div className='repo'>
                 <h1>Repo Details To be displayed Here</h1>
             </div>
     )
