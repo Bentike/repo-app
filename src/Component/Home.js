@@ -8,13 +8,13 @@ const Home = () => {
     const [error, setError] = useState(false);
 
     if(error){
-    throw Error("Something Went Wrong!!");
+      throw Error("Something Went Wrong!!");
     }
 
     const makeError = () => {
-    setError(true);
+      setError(true);
     }
-    
+
     return(
          <>
            <Helmet>
