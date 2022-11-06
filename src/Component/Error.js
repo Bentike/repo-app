@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Styles/Error.css';
 
 class Error extends React.Component{
@@ -26,10 +26,7 @@ class Error extends React.Component{
             return (
                 <div className='err'>
                      <h1>Something Went Wrong!!!</h1>
-                     <Link to='/'>
-                         Go back home.
-                     </Link>
-                     <Outlet/>
+                     <Link to='/'>Home</Link>
                 </div>
             );
         }
