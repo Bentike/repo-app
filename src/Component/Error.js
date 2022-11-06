@@ -21,12 +21,13 @@ class Error extends React.Component{
         console.log(info);
     }
 
+
     render(){
         if(this.state.hasError){
             return (
                 <div className='err'>
                      <h1>Something Went Wrong!!!</h1>
-                     <Link to='/'>Home</Link>
+                     <Link to=''>Home</Link>
                 </div>
             );
         }

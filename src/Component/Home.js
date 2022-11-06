@@ -1,9 +1,10 @@
-import { useState } from "react";
+import { useState} from "react";
 import { Link, Outlet } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import './Styles/Home.css';
 
 const Home = () => {
+
     const [error, setError] = useState(false);
 
     if(error){

@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Netlify Hosted Link
 
-This is the link to the hosted version of the app: [https://repo-app.netlify.app/repos](https://repo-app.netlify.app/repos)
+This is the link to the hosted version of the app: [https://repo-app.netlify.app/](https://repo-app.netlify.app/)
