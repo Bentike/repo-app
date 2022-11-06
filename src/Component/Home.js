@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet-async";
 import './Styles/Home.css';
 
 const Home = () => {
-
     const [error, setError] = useState(false);
 
     if(error){
