@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, Outlet } from 'react-router-dom';
+import './Styles/Error.css';
 
 class Error extends React.Component{
     constructor(props){
@@ -21,7 +23,15 @@ class Error extends React.Component{
 
     render(){
         if(this.state.hasError){
-            return "Something Went Wrong!!!";
+            return (
+                <div className='err'>
+                     <h1>Something Went Wrong!!!</h1>
+                     <Link to='/'>
+                         Go back home.
+                     </Link>
+                     <Outlet/>
+                </div>
+            );
         }
         return this.props.children;
     }

@@ -4,16 +4,17 @@ import { Helmet } from "react-helmet-async";
 import './Styles/Home.css';
 
 const Home = () => {
-   const [error, setError] = useState(false);
 
-   if(error){
-     throw Error("Something Went Wrong!!");
-   }
+    const [error, setError] = useState(false);
 
-   const makeError = () => {
-      setError(true);
-   }
+    if(error){
+    throw Error("Something Went Wrong!!");
+    }
 
+    const makeError = () => {
+    setError(true);
+    }
+    
     return(
          <>
            <Helmet>
