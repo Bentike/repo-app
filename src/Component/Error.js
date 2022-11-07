@@ -8,6 +8,7 @@ class Error extends React.Component{
         this.state = {
             hasError: false
         }
+        this.setError = this.setError.bind(this);
     }
 
     static getDerivedStateFromError(error){
@@ -20,14 +21,19 @@ class Error extends React.Component{
         console.log(error);
         console.log(info);
     }
-
+    
+   setError(){
+     this.state.setState({
+        hasError: false
+     });
+   }
 
     render(){
         if(this.state.hasError){
             return (
                 <div className='err'>
                      <h1>Something Went Wrong!!!</h1>
-                     <Link to='/'>Home</Link>
+                     <Link to='/' onClick={this.setError}>Home</Link>
                 </div>
             );
         }
