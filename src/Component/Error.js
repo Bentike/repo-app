@@ -33,7 +33,7 @@ class Error extends React.Component{
             return (
                 <div className='err'>
                      <h1>Something Went Wrong!!!</h1>
-                     <Link to='/' onClick={this.setError}>Home</Link>
+                     <Link to='/' onClick={this.setError}>Go Back Home</Link>
                 </div>
             );
         }
