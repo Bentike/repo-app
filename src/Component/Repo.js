@@ -33,17 +33,19 @@ const Repo = () => {
                    <meta name="author" content="Ajadi Yusuf"/>
                    <link rel="canonical" href="/repo" />  
                 </Helmet>  
-                <h1>More Details</h1>
-                <img src={avatar_url} alt='owner' className='avatar'/>
-                <p><span className='title'>Username: </span>{login}</p>
-                <p><span className='title'>Fullname: </span>{full_name}</p>
-                <p><span className='title'>Name: </span>{name}</p>
-                <p><span className='title'>Date Created: </span>{created_at}</p>
-                <p><span className='title'>Default branch: </span>{default_branch}</p>
-                <p><span className='title'>Language: </span>{language}</p>
-                <p><span className='title'>Visibility: </span>{visibility}</p>
-                <p><span className='title'>Repo Id: </span>{id}</p>
-                <p><span className='title'>Url: </span>{url}</p>
+                <div>
+                    <h1>More Details</h1>
+                    <img src={avatar_url} alt='owner' className='avatar'/>
+                    <p><span className='title'>Username: </span>{login}</p>
+                    <p><span className='title'>Fullname: </span>{full_name}</p>
+                    <p><span className='title'>Name: </span>{name}</p>
+                    <p><span className='title'>Date Created: </span>{created_at}</p>
+                    <p><span className='title'>Default branch: </span>{default_branch}</p>
+                    <p><span className='title'>Language: </span>{language}</p>
+                    <p><span className='title'>Visibility: </span>{visibility}</p>
+                    <p><span className='title'>Repo Id: </span>{id}</p>
+                    <p><span className='title'>Url: </span>{url}</p>
+                </div> 
             </div>
         );
 }
